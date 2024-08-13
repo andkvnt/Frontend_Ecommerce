@@ -1,0 +1,205 @@
+:root{
+    --soft-black: #222222;
+    --dark-gray: #9B9B9B;
+    --light-gray: #D4D4D4;
+    --soft-white: #F9F9F9;
+    --light-orange: #F01F0E;
+    --dark-orange: #DB3022;
+    --green: #2AA952;
+    --red: #CC0B04;
+    --blue: #1C3391;
+    --orange: #F67B02;
+    --pink: #F3456F;
+}
+
+/* Background color palette */
+.bg-soft-black     { background-color: var(--soft-black); }
+.bg-dark-gray      { background-color: var(--dark-gray); }
+.bg-light-gray     { background-color: var(--light-gray); }
+.bg-soft-white     { background-color: var(--soft-white); }
+.bg-light-orange   { background-color: var(--light-orange); }
+.bg-dark-orange, button.active { background-color: var(--dark-orange); }
+.bg-green          { background-color: var(--green); }
+.bg-red            { background-color: var(--red); }
+.bg-blue           { background-color: var(--blue); }
+.bg-orange         { background-color: var(--orange); }
+.bg-pink           { background-color: var(--pink); }
+
+/* Button hover color palette */
+.button.bg-soft-black:hover     { background-color: #0f0f0f; }
+.button.bg-dark-gray:hover      { background-color: #757575; }
+.button.bg-light-gray:hover     { background-color: #adadad; }
+.button.bg-soft-white:hover     { background-color: #d3d3d3; }
+.button.bg-light-orange:hover   { background-color: #c91b0c; }
+.button.bg-dark-orange:hover    { background-color: #b5291c; }
+.button.bg-green:hover          { background-color: #20823f; }
+.button.bg-red:hover            { background-color: #a50803; }
+.button.bg-blue:hover           { background-color: #14256b; }
+.button.bg-orange:hover         { background-color: #ce6802; }
+.button.bg-pink:hover           { background-color: #cc395b; }
+
+/* Button active color palette */
+.button.bg-soft-black:active     { background-color: #000000; }
+.button.bg-dark-gray:active      { background-color: #696969; }
+.button.bg-light-gray:active     { background-color: #a1a1a1; }
+.button.bg-soft-white:active     { background-color: #c7c7c7; }
+.button.bg-light-orange:active   { background-color: #b2180a; }
+.button.bg-dark-orange:active    { background-color: #9f2419; }
+.button.bg-green:active          { background-color: #1c6e36; }
+.button.bg-red:active            { background-color: #8c0703; }
+.button.bg-blue:active           { background-color: #101e56; }
+.button.bg-orange:active         { background-color: #b65c02; }
+.button.bg-pink:active           { background-color: #bb3050; }
+
+/* Text color palette */
+.text-soft-black     { color: var(--soft-black) }
+.text-dark-gray      { color: var(--dark-gray); }
+.text-light-gray     { color: var(--light-gray); }
+.text-soft-white, button.active { color: var(--soft-white); }
+.text-light-orange   { color: var(--light-orange); }
+.text-dark-orange    { color: var(--dark-orange); }
+.text-green          { color: var(--green); }
+.text-red            { color: var(--red); }
+.text-blue           { color: var(--blue); }
+.text-orange         { color: var(--orange); }
+.text-pink           { color: var(--pink); }
+
+* {
+    font-family: 'Metropolis';
+    font-weight: 400;
+}
+
+button {
+    box-sizing: border-box;
+    border: 0px;
+    transition-duration: 0.2s;
+}
+
+a{
+    color:#0f0f0f !important;
+    text-decoration: none !important;
+}
+
+input:checked{
+    background-color: #DB3022 !important;
+    border-color: #DB3022 !important;
+}
+
+/* Metropolis font */
+/* Thin */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-ThinItalic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+/* Extra Light */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-ExtraLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-ExtraLightItalic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+/* Light */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+/* Regular */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+/* Medium */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+/* Semi Bold */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-SemiBoldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+/* Bold */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+/* Extra Bold */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-ExtraBoldItalic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+/* Black */
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Metropolis";
+    src: url('../fonts/metropolis/Metropolis-BlackItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
